@@ -1,0 +1,27 @@
+
+  @font-face {
+    font-family: Open-sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/OpenSans-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Open-sans;
+    font-style: Bold;
+    font-weight: 700;
+    src: url(/fonts/OpenSans-Bold.ttf);
+  }
+
+  
+  body{
+    font-family: Open-sans;
+  }
+
+  :root { 
+    --primary-color: #EB3F57;
+    --text-color: #000000;
+ }
+
+
+
