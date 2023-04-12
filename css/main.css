@@ -39,7 +39,7 @@ body{
     font-family: 'Open-sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 2 7px;
+    font-size: 27px;
     line-height: 37px;
     color: var(--secondary-color);
 }            
@@ -70,6 +70,15 @@ body{
     font-size: 18px;
     line-height: 25px;
     color: var( --text-color);
+}
+/* Текст внизу сторінки */
+.lowerText{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color);
 }
 /* Текст посилань ReadMore */
 .linkRM{
@@ -104,13 +113,13 @@ body{
     height: 40px;  
     width: 135px;
 }
-/* Ефект hover */
+/* Ефект hover до кнопок */
 .redButton:hover{
     background: var(--primary-color);
     box-shadow: inset 1px 1px 2px rgba(170, 170, 204, 0.5), inset -1px -1px 2px #FFFFFF;
     border-radius: 40px;
 }
-
+/* Ефект hover до меню */
 .menuItem :hover{
     color: var(--primary-color);
 }
@@ -131,6 +140,7 @@ body{
     height: 37px;
     width: 276px;
     margin: 14px 0 0 14px;
+    mix-blend-mode: multiply;
 }
 
 .mainLogo{
@@ -217,6 +227,7 @@ body{
 
 .page3{
     display: flex;
+    margin-bottom: 153px;
 }
 
 .page3Left{
@@ -283,6 +294,114 @@ body{
 .page3Right .pathWay .secondaryText{
     margin: 7px 0 0 0;
 }
+
+.page4 .sideTitle{
+    display: block;
+    width: 15%;
+    margin: 0 0 0 11px;
+}
+
+.page4Content{
+    display: flex;
+}
+
+.contentLeft{
+    width: 35%;
+
+}
+
+.contentLeft img{
+
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 55px 132px 42px 129px;
+    margin: 52px 0px 5px 136px;
+  
+}
+
+.contentLeft .otherTitle{
+    margin: 0 0 0 134px;
+}
+
+.contentLeft .lowerText{
+    width: 370px;
+    margin: 9px 0 0 136px;
+    word-wrap: normal;
+}
+
+.contentLeft .linkRM{
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 15px 0 0 135px;
+}
+
+.contentCenter{
+    width: 30%;
+
+}
+
+.contentCenter img{
+
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 55px 132px 53px 139px;
+    margin: 52px 0px 5px 128px;
+  
+}
+
+.contentCenter .otherTitle{
+    margin: 0 0 0 130px;
+}
+
+.contentCenter .secondaryText{
+    width: 370px;
+    margin: 12px 0 0 130px;
+}
+
+.contentCenter .linkRM{
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 19px 0 0 130px;
+}
+
+.contentCenter{
+    width: 30%;
+    margin: 97px 0 0 -82px;
+
+}
+
+.contentRight img{
+
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 47px 135px 60px 137px;
+    margin: 52px 0px 5px 133px;
+  
+}
+
+.contentRight .otherTitle{
+    margin: 0 0 0 134px;
+}
+
+.contentRight .secondaryText{
+    width: 333px;
+    margin: 0px 0 0 134px;
+    word-wrap: break-word;
+}
+
+.contentRight .linkRM{
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 19px 0 0 135px;
+}
+
+
+
+
+
 
 
 
