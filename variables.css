@@ -16,12 +16,37 @@
   
   body{
     font-family: Open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--text-color);
+
+
+    max-width: 1919px;
+    background: url(/img/background.svg);
+    background-position: 0 62px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #F5F5FA;
+    margin: 0 auto;
+    
+   
+    
   }
 
   :root { 
     --primary-color: #EB3F57;
+    --secondary-color: #454654;
+    --white-text-color: #FFFFFF;
     --text-color: #000000;
  }
 
+ .layout{
+  max-width: 1515px;
+  margin: 0 auto;
+  border: 1px solid black;
+ }
+ 
 
 
