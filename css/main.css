@@ -241,26 +241,48 @@ body{
 
 .page3Right .arrowTarget{
     display: flex;
+    margin-bottom: 50px;
 }
 
 .page3Right .arrowTarget img{
-    margin: 0 0 0 84px;
+    margin: 23px 0 0 84px;
     display: block;
+    width: 108px;
+    height: 108px;
   
 }
 
 .page3Right .arrowTarget div{
     margin: 22px 0px -24px 48px;
-    width: 60%;
+    width: 436px;
     
 }
 
 .page3Right .arrowTarget .secondaryText{
-    margin: 0 0 0 0;
+    margin: 16px 0 0 0;
 
 }
 
+.page3Right .pathWay{
+    display: flex;
+}
 
+.page3Right .pathWay img{
+    margin: 51px 0 0 95px;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.page3Right .pathWay div{
+    margin: 45px 0px -24px 66px;
+    width: 436px;
+
+}
+
+.page3Right .pathWay .secondaryText{
+    margin: 7px 0 0 0;
+}
 
 
 
