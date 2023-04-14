@@ -1,0 +1,662 @@
+@import url(/css/variables.css);
+
+/* Заголовки червоним кольором */
+.mainTitle     {
+    font-family: 'Open-sans';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;         
+    color: var(--primary-color);
+}
+/* Заголовки над типу "Who we are"  */
+.secondaryTitle{
+    font-family: 'Open-sans';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;    
+    text-transform: uppercase;        
+    color: var(--secondary-color);
+}
+ /* Заголовки маленьких абзаців з картинками */
+.lowerTitle{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    color: var( --text-color);
+}
+/* Заголовки над нижніми абзацами */
+.otherTitle{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
+    color: var(--secondary-color);
+}            
+/* Осоновний текст */
+.mainText{
+    font-family: 'Open-sans';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 21px;
+     line-height: 29px;
+    color: var( --text-color);
+}
+/* Інколи використовується білий текст */
+.whiteText{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    color: var( --white-text-color);   
+}
+/* Текст форми внизу */
+.formText{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: var( --white-text-color); 
+}
+/* Другорядний текст */
+.secondaryText{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var( --text-color);
+}
+/* Текст внизу сторінки */
+.lowerText{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+/* Текст посилань ReadMore */
+.linkRM{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--primary-color); 
+}
+
+/* Стилізація кнопки */
+.redButton{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 32px;
+    background: linear-gradient(180deg, #EB3F57 0%, #893944 100%);
+    box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5); 
+    height: 40px;  
+    width: 135px;
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white-text-color); 
+}
+/* Ефект hover до кнопок */
+.redButton:hover{
+    background: var(--primary-color);
+    box-shadow: inset 1px 1px 2px rgba(170, 170, 204, 0.5), inset -1px -1px 2px #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+/* Ефект hover до меню */
+.menuItem a:hover{
+    color: var(--primary-color);
+}
+/* стиль тексту(label) в формі */
+.labelText{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1px;
+    color: #252F40;
+}
+/* Заголовок правої частини форми */
+.titleFormWhite{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0px;
+    letter-spacing: -0.02666em;
+    color: var(--white-text-color);
+}
+/* нижче заголовку форми */
+.titleLowWhite{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white-text-color);
+}
+/* шрифт цифр */
+.numbersWhite{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 7px;
+    color: rgba(255, 255, 255, 0.8);
+}
+/* останні два повідомлення */
+.lastFontForm{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.navigationMenu{
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+}
+
+.mainLogo img{
+    height: 37px;
+    width: 276px;
+    margin: 14px 0 0 14px;
+    mix-blend-mode: multiply;
+}
+
+.mainLogo{
+    width: 30%;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 70%;
+    /* margin: 8px 0px 0 493px; */
+}
+
+.menuItem{
+    display: flex;
+    margin: 0 72px 0 0;   
+}
+
+
+.pageHello h1{
+    /* // Serhii */
+    /* // delete margin */
+    margin: 330px 0 0 424px; 
+}
+
+.pageHello p{
+    width: 954px; 
+    margin: 8px 0 0 284px;
+}
+
+.pageHello .redButton{
+   display: inline-flex;
+
+   margin: 45px 0 0 694px;
+}
+
+.pageHello img{
+    display: block;
+    margin: 180px 0 0 750px;
+}
+
+.pageHello{
+    margin-bottom: 200px;
+}
+
+.page2{
+    display: flex;
+    margin-bottom: 190px;
+}
+
+.page2Left{
+    width: 45%;
+    display: inline-block;
+}
+
+.sideTitle .secondaryTitle{
+    margin-bottom: 5px;
+}
+
+.page2Left .sideTitle{
+    display: block;
+    width: 150px;
+    margin: 8px 0 0 16px;
+}
+
+.page2Left h2{
+    margin: 32px 0 0 16px;
+}
+
+.page2Left p{
+    width: 90%;
+    margin: 11px 0 0 17px;
+}
+
+.page2Left .redButton{
+    margin: 27px 0 0 14px;
+   
+}
+
+.page2Right{
+    width: 55%;
+}
+.page2Right img{
+   margin: 65px 75px;
+}
+
+.page3{
+    display: flex;
+    margin-bottom: 153px;
+}
+
+.page3Left{
+    display: flex;
+    width: 55%;
+}
+
+.page3Left img{
+    margin: 57px -196px; 
+}
+
+.page3Right{
+    width: 45%;
+}
+
+.page3Right .sideTitle{
+    width: 40%;
+    text-align: right;
+    margin: -2px 0 0 403px;
+  
+}
+
+.page3Right .arrowTarget{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.page3Right .arrowTarget img{
+    margin: 23px 0 0 84px;
+    display: block;
+    width: 108px;
+    height: 108px;
+  
+}
+
+.page3Right .arrowTarget div{
+    margin: 22px 0px -24px 48px;
+    width: 436px;
+    
+}
+
+.page3Right .arrowTarget .secondaryText{
+    margin: 16px 0 0 0;
+
+}
+
+.page3Right .pathWay{
+    display: flex;
+}
+
+.page3Right .pathWay img{
+    margin: 51px 0 0 95px;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.page3Right .pathWay div{
+    margin: 45px 0px -24px 66px;
+    width: 436px;
+
+}
+
+.page3Right .pathWay .secondaryText{
+    margin: 7px 0 0 0;
+}
+
+.page4 .sideTitle{
+    display: block;
+    width: 15%;
+    margin: 0 0 0 11px;
+}
+
+.page4Content{
+    display: flex;
+}
+
+.contentLeft{
+    width: 35%;
+
+}
+
+.contentLeft img{
+
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 55px 132px 42px 129px;
+    margin: 52px 0px 5px 136px;
+  
+}
+
+.contentLeft .otherTitle{
+    margin: 0 0 0 134px;
+}
+
+.contentLeft .lowerText{
+    width: 370px;
+    margin: 9px 0 0 136px;
+    word-wrap: normal;
+}
+
+.contentLeft .linkRM{
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 15px 0 0 135px;
+}
+
+.contentCenter{
+    width: 30%;
+
+}
+
+.contentCenter img{
+
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 55px 132px 53px 139px;
+    margin: 52px 0px 5px 128px;
+  
+}
+
+.contentCenter .otherTitle{
+    margin: 0 0 0 130px;
+}
+
+.contentCenter .secondaryText{
+    width: 370px;
+    margin: 12px 0 0 130px;
+}
+
+.contentCenter .linkRM{
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 19px 0 0 130px;
+}
+
+.contentCenter{
+    width: 30%;
+    margin: 97px 0 0 -82px;
+
+}
+
+.contentRight img{
+
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    padding: 47px 135px 60px 137px;
+    margin: 52px 0px 5px 133px;
+  
+}
+
+.contentRight .otherTitle{
+    margin: 0 0 0 134px;
+}
+
+.contentRight .secondaryText{
+    width: 333px;
+    margin: 0px 0 0 134px;
+    word-wrap: break-word;
+}
+
+.contentRight .linkRM{
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 19px 0 0 135px;
+}
+
+/* Стилі і розміщення форми, винесу це окремо!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* Задав фон і розмір форми */
+.formStyle{
+    background: #FFFFFF;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    background-image: url(/img/Background\ 2.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 669px;
+    width: 84%;
+    background-position: right;
+    margin: 247px 0 133px 126px;
+    display: flex;
+   
+}
+
+.formStyle{
+    
+}
+
+.page5Left{
+    width: 65%;
+}
+
+.page5Left .mainTitle{
+    display: inline-block;
+    margin: 61px 0 0 38px;
+}
+
+.page5Left .textForm{
+    margin: 9px 0 68px 39px;
+}
+
+#name{
+    background: #F5F5FA;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+    border-radius: 15px;
+    width: 656px;
+    height: 40px;
+    margin: 1px 38px 19px 41px;
+    border: none;
+
+}
+
+#name::placeholder{
+    text-indent: 29px;
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#email{
+    background: #F5F5FA;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+    border-radius: 15px;
+    width: 656px;
+    height: 40px;
+    margin: 6px 38px 14px 41px;
+    border: none;
+}
+
+#email::placeholder{
+    text-indent: 29px;
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#message{
+    background: #F5F5FA;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+    border-radius: 15px;
+    overflow: auto;
+    resize: none;
+    width: 656px;
+    height: 141px;
+    margin: 10px 38px 19px 41px;
+    border: none;
+}
+
+#message::placeholder{
+    text-indent: 29px;
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+form .labelText{
+    margin: 0 0 0 45px;
+    display: inline-block;
+}
+
+form .redButton{
+    margin: 0 0 0 562px;
+    border: none;
+}
+
+.page5Right{
+    margin: 0 0 0 131px;
+    width: 35%;
+}
+
+.page5Right .titleFormWhite{
+    margin: 192px 0 30px 0px;
+}
+.page5Right .titleLowWhite{
+    width: 85%;
+}
+.phoneNumber{
+    display: flex;
+    margin: 35px 0 0 8px;
+}
+
+.phoneNumber .numbersWhite{
+    margin: 4px 0 0 15px;
+}
+
+.emailCompany{
+    display: flex;
+    margin: 26px 0 0 7px;
+}
+
+.emailCompany .lastFontForm{
+    margin: 4px 0 19px 16px;
+}
+
+.emailCompany img{
+    height: 14px;
+    width: 14px;
+}
+.placeCompany{
+    display: flex;
+}
+
+.placeCompany img{
+    margin: 2px 0 0 8px;
+}
+
+.placeCompany .lastFontForm{
+    margin: 0 0 0 14px;
+}
+
+.socialIcons{
+    margin: 54px 0 0 16px;
+}
+
+.socialIcons img{
+    margin: 0px 32px 0 0px;
+}
+
+footer .navigationMenu{
+    display: flex;
+    height: 62px;
+}
+
+footer .mainLogo img{
+    height: 37px;
+    width: 276px;
+    margin: 14px 0 0 14px;
+    mix-blend-mode: multiply;
+}
+
+footer .mainLogo{
+    width: 10%;
+}
+
+footer .menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 70%;
+    margin: 5px 4px 0 462px;
+    justify-content: flex-end;
+}
+
+footer .menuItem{
+ 
+    margin: 0 0 0 73px;   
+}
+
+footer p{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px; 
+    margin: 0 5px 0 0;
+    
+}
+
+footer div{
+    display: flex;
+    margin: 7px 0 0 15px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
