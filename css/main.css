@@ -1,235 +1,83 @@
 @import url(/css/variables.css);
+@import url(/css/general.css);
 
-/* Заголовки червоним кольором */
-.mainTitle     {
-    font-family: 'Open-sans';
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;         
-    color: var(--primary-color);
+.headerBack{
+    background-color: #FFFFFF;
 }
-/* Заголовки над типу "Who we are"  */
-.secondaryTitle{
-    font-family: 'Open-sans';
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;    
-    text-transform: uppercase;        
-    color: var(--secondary-color);
-}
- /* Заголовки маленьких абзаців з картинками */
-.lowerTitle{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 29px;
-    color: var( --text-color);
-}
-/* Заголовки над нижніми абзацами */
-.otherTitle{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 37px;
-    color: var(--secondary-color);
-}            
-/* Осоновний текст */
-.mainText{
-    font-family: 'Open-sans';
-    font-style: normal; 
-    font-weight: 400;
-    font-size: 21px;
-     line-height: 29px;
-    color: var( --text-color);
-}
-/* Інколи використовується білий текст */
-.whiteText{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 29px;
-    text-align: center;
-    color: var( --white-text-color);   
-}
-/* Текст форми внизу */
-.formText{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 18px;
-    color: var( --white-text-color); 
-}
-/* Другорядний текст */
-.secondaryText{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: var( --text-color);
-}
-/* Текст внизу сторінки */
-.lowerText{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--secondary-color);
-}
-/* Текст посилань ReadMore */
-.linkRM{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    color: var(--primary-color); 
-}
-
-/* Стилізація кнопки */
-.redButton{ 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    border-radius: 32px;
-    background: linear-gradient(180deg, #EB3F57 0%, #893944 100%);
-    box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5); 
-    height: 40px;  
-    width: 135px;
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--white-text-color); 
-}
-/* Ефект hover до кнопок */
-.redButton:hover{
-    background: var(--primary-color);
-    box-shadow: inset 1px 1px 2px rgba(170, 170, 204, 0.5), inset -1px -1px 2px #FFFFFF;
-    border-radius: 40px;
-    cursor: pointer;
-    
-}
-/* Ефект hover до меню */
-.menuItem a:hover{
-    color: var(--primary-color);
-}
-/* стиль тексту(label) в формі */
-.labelText{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1px;
-    color: #252F40;
-}
-/* Заголовок правої частини форми */
-.titleFormWhite{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 0px;
-    letter-spacing: -0.02666em;
-    color: var(--white-text-color);
-}
-/* нижче заголовку форми */
-.titleLowWhite{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--white-text-color);
-}
-/* шрифт цифр */
-.numbersWhite{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 7px;
-    color: rgba(255, 255, 255, 0.8);
-}
-/* останні два повідомлення */
-.lastFontForm{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-
-
-
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .navigationMenu{
     display: flex;
-    justify-content: space-between;
     height: 62px;
 }
 
 .mainLogo img{
     height: 37px;
     width: 276px;
-    margin: 14px 0 0 14px;
     mix-blend-mode: multiply;
 }
 
 .mainLogo{
     width: 30%;
+    margin: 16px 0 0 15px;
 }
 
 .menu{
     display: flex;
-    list-style: none;
-    align-items: center;
     width: 70%;
-    /* margin: 8px 0px 0 493px; */
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3px 0 0 0;
+}
+
+.menuList{
+    display: flex;
 }
 
 .menuItem{
-    display: flex;
-    margin: 0 72px 0 0;   
+    margin: 5px 0 0 73px;
+}
+
+.menuSecondary{
+    margin: 3px 6px 0 67px;
 }
 
 
-.pageHello h1{
-    /* // Serhii */
-    /* // delete margin */
-    margin: 330px 0 0 424px; 
+.helloContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 332px 0 0 48px;
+}
+
+.pageHello .mainTitle{
+    text-align: center;
+  
 }
 
 .pageHello p{
     width: 954px; 
-    margin: 8px 0 0 284px;
+    text-align: center;
+    margin: 9px 37px 0 0px;
 }
 
 .pageHello .redButton{
-   display: inline-flex;
-
-   margin: 45px 0 0 694px;
+    margin: 43px 36px 0 0px;
 }
 
 .pageHello img{
     display: block;
-    margin: 180px 0 0 750px;
+    align-items: top;
+    margin: 180px 36px 0 0px;
 }
 
 .pageHello{
-    margin-bottom: 200px;
+    background: url(/img/background.svg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 883px;
+    margin-bottom: 77px;
 }
 
 .page2{
@@ -267,10 +115,11 @@
 }
 
 .page2Right{
+    display: flex;
     width: 55%;
 }
 .page2Right img{
-   margin: 65px 75px;
+   margin: 65px 62px;
 }
 
 .page3{
@@ -355,7 +204,6 @@
 
 .contentLeft{
     width: 35%;
-
 }
 
 .contentLeft img{
@@ -364,7 +212,6 @@
     background-color: var(--secondary-color);
     padding: 55px 132px 42px 129px;
     margin: 52px 0px 5px 136px;
-  
 }
 
 .contentLeft .otherTitle{
@@ -386,7 +233,6 @@
 
 .contentCenter{
     width: 30%;
-
 }
 
 .contentCenter img{
@@ -395,7 +241,6 @@
     background-color: var(--secondary-color);
     padding: 55px 132px 53px 139px;
     margin: 52px 0px 5px 128px;
-  
 }
 
 .contentCenter .otherTitle{
@@ -421,12 +266,10 @@
 }
 
 .contentRight img{
-
     border: 1px solid black;
     background-color: var(--secondary-color);
     padding: 47px 135px 60px 137px;
     margin: 52px 0px 5px 133px;
-  
 }
 
 .contentRight .otherTitle{
@@ -445,10 +288,7 @@
     text-underline-offset: 7px;
     margin: 19px 0 0 135px;
 }
-
 /* Стилі і розміщення форми, винесу це окремо!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
 /* Задав фон і розмір форми */
 .formStyle{
     background: #FFFFFF;
@@ -464,11 +304,6 @@
     background-position: right;
     margin: 247px 0 133px 126px;
     display: flex;
-   
-}
-
-.formStyle{
-    
 }
 
 .page5Left{
@@ -492,7 +327,6 @@
     height: 40px;
     margin: 1px 38px 19px 41px;
     border: none;
-
 }
 
 #name::placeholder{
@@ -562,8 +396,10 @@ form .redButton{
 .page5Right .titleFormWhite{
     margin: 192px 0 30px 0px;
 }
+
 .page5Right .titleLowWhite{
     width: 85%;
+
 }
 .phoneNumber{
     display: flex;

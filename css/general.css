@@ -1,0 +1,152 @@
+/* Заголовки червоним кольором */
+.mainTitle     {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;         
+    color: var(--primary-color);
+}
+/* Заголовки над типу "Who we are"  */
+.secondaryTitle{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;    
+    text-transform: uppercase;        
+    color: var(--secondary-color);
+}
+ /* Заголовки маленьких абзаців з картинками */
+.lowerTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    color: var( --text-color);
+}
+/* Заголовки над нижніми абзацами */
+.otherTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
+    color: var(--secondary-color);
+}            
+/* Осоновний текст */
+.mainText{
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 21px;
+     line-height: 29px;
+    color: var( --text-color);
+}
+/* Інколи використовується білий текст */
+.whiteText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    color: var( --white-text-color);   
+}
+/* Текст форми внизу */
+.formText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: var( --white-text-color); 
+}
+/* Другорядний текст */
+.secondaryText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var( --text-color);
+}
+/* Текст внизу сторінки */
+.lowerText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+/* Текст посилань ReadMore */
+.linkRM{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--primary-color); 
+}
+
+/* Стилізація кнопки */
+.redButton{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 32px;
+    background: linear-gradient(180deg, #EB3F57 0%, #893944 100%);
+    box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5); 
+    height: 40px;  
+    width: 135px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white-text-color); 
+}
+/* Ефект hover до кнопок */
+.redButton:hover{
+    background: var(--primary-color);
+    box-shadow: inset 1px 1px 2px rgba(170, 170, 204, 0.5), inset -1px -1px 2px #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+/* Ефект hover до меню */
+.menuItem a:hover{
+    color: var(--primary-color);
+}
+/* стиль тексту(label) в формі */
+.labelText{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1px;
+    color: #252F40;
+}
+/* Заголовок правої частини форми */
+.titleFormWhite{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0px;
+    letter-spacing: -0.02666em;
+    color: var(--white-text-color);
+}
+/* нижче заголовку форми */
+.titleLowWhite{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white-text-color);
+}
+/* шрифт цифр */
+.numbersWhite{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 7px;
+    color: rgba(255, 255, 255, 0.8);
+}
+/* останні два повідомлення */
+.lastFontForm{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.8);
+}
