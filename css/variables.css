@@ -1,1 +1,43 @@
-@import url(/variables.css);
+
+  @font-face {
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/OpenSans-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Open-sans';
+    font-style: Bold;
+    font-weight: 700;
+    src: url(/fonts/OpenSans-Bold.ttf);
+  }
+
+  
+  body{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px; 
+    line-height: 27px;
+    color: var(--text-color); 
+    margin: 0 auto;
+    background-color: #F5F5FA; 
+  }
+
+  :root { 
+    --primary-color: #EB3F57;
+    --secondary-color: #454654;
+    --white-text-color: #FFFFFF;
+    --text-color: #000000;
+    --form-text:#67748E;
+ }
+
+ .layout{
+  max-width: 1515px;
+  margin: 0 auto;
+ 
+ }
+ 
+
+

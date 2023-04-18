@@ -1,5 +1,6 @@
-@import url(/css/variables.css);
+/* @import url(/css/variables.css); */
 @import url(/css/general.css);
+@import url(/css/reset.css);
 
 .headerBack{
     background-color: #FFFFFF;
@@ -327,10 +328,10 @@
     height: 40px;
     margin: 1px 38px 19px 41px;
     border: none;
+    padding-left: 29px;
 }
 
 #name::placeholder{
-    text-indent: 29px;
     font-family: 'Open-sans';
     font-style: normal;
     font-weight: 400;
@@ -346,10 +347,10 @@
     height: 40px;
     margin: 6px 38px 14px 41px;
     border: none;
+    padding-left: 29px;
 }
 
 #email::placeholder{
-    text-indent: 29px;
     font-family: 'Open-sans';
     font-style: normal;
     font-weight: 400;
@@ -367,10 +368,10 @@
     height: 141px;
     margin: 10px 38px 19px 41px;
     border: none;
+    padding: 0px 0 0 29px;
 }
 
 #message::placeholder{
-    text-indent: 29px;
     font-family: 'Open-sans';
     font-style: normal;
     font-weight: 400;
@@ -385,6 +386,7 @@ form .labelText{
 
 form .redButton{
     margin: 0 0 0 562px;
+    text-align: center;
     border: none;
 }
 
@@ -451,7 +453,6 @@ footer .navigationMenu{
 footer .mainLogo img{
     height: 37px;
     width: 276px;
-    margin: 14px 0 0 14px;
     mix-blend-mode: multiply;
 }
 
@@ -459,11 +460,13 @@ footer .mainLogo{
     width: 10%;
 }
 
+
+
 footer .menu{
     display: flex;
     list-style: none;
     align-items: center;
-    width: 70%;
+    width: 1919px;
     margin: 5px 4px 0 462px;
     justify-content: flex-end;
 }
@@ -483,10 +486,25 @@ footer p{
     
 }
 
-footer div{
+footer .footReserved{
     display: flex;
     margin: 7px 0 0 15px;
+    flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+}
+
+footer .footReserved::before{
+    border-top: 1px solid #F0EDED;
+    content: '';
+    width: 1919px;
+    position: absolute;
+    top: 0;
+    left: -225px; 
+}
+
+footer{
+    background-color: #FFFFFF;
 }
 
 

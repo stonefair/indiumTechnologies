@@ -1,5 +1,6 @@
 /* Заголовки червоним кольором */
 .mainTitle     {
+    /* font-family: 'Open-sans'; */
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;         
@@ -7,6 +8,7 @@
 }
 /* Заголовки над типу "Who we are"  */
 .secondaryTitle{
+    /* font-family: 'Open-sans'; */
     font-weight: 400;
     font-size: 36px;
     line-height: 49px;    
@@ -31,6 +33,7 @@
 }            
 /* Осоновний текст */
 .mainText{
+    font-family: 'Open-sans';
     font-style: normal; 
     font-weight: 400;
     font-size: 21px;
@@ -150,3 +153,5 @@
     line-height: 17px;
     color: rgba(255, 255, 255, 0.8);
 }
+
+
