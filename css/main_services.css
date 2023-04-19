@@ -1,0 +1,281 @@
+@import url(/css/general.css);
+@import url(/css/reset.css);
+
+.headerBack{
+    background-color: #FFFFFF;
+}
+
+.navigationMenu{
+    display: flex;
+    height: 62px;
+}
+
+.mainLogo img{
+    height: 37px;
+    width: 276px;
+    mix-blend-mode: multiply;
+}
+
+.mainLogo{
+    width: 30%;
+    margin: 16px 0 0 15px;
+}
+
+.menu{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3px 0 0 0;
+}
+
+.menuList{
+    display: flex;
+}
+
+.menuItem{
+    margin: 5px 0 0 73px;
+}
+
+.menuSecondary{
+    margin: 3px 6px 0 67px;
+}
+
+.helloContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 332px 0 0 48px;
+}
+
+.pageHello .mainTitle{
+    text-align: center;
+    margin: 0 0 0 18px;
+  
+}
+
+.pageHello p{
+    width: 954px; 
+    text-align: center;
+    margin: 0 0 0 23px;
+}
+
+.pageHello img{
+    display: block;
+    align-items: top;
+    margin: 243px 38px 0 0px;
+}
+
+.pageHello{
+    background: url(/img/Background3.svg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 883px;
+    margin-bottom: 44px;
+    /* height: 835px; */
+}
+
+.page2{
+    display: flex;
+    margin-bottom: 253px;
+}
+
+.page2Content{
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    margin: 142px 0 0 45px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 2050px;
+}
+
+.page2Content img{
+    margin: 43px 0 19px 39px;
+}
+
+.page2Content .mainTitle{
+    margin: 0 0 19px 39px;
+}
+
+.page2Content .whiteText{
+    text-align: left;
+    width: 637px;
+    margin: 0 0 0 42px;
+    padding: 0 0 149px 0;
+}
+
+
+.page2Photo{
+    position: absolute;
+
+}
+
+.page2Photo img{
+    position: relative;
+    top: 77px;
+    left: 744px;
+    z-index: 2;
+}
+
+.page3{
+    display: flex;
+    margin-bottom: 192px;
+}
+
+.page3Content{
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 593px;
+    width: 100%;
+    margin-top: 57px;
+   
+}
+
+.page3Content img{
+    width: 96px;
+    margin: 61px 0 31px 248px;
+}
+
+.page3Content .mainTitle{
+    margin: 0 0 16px 360px;
+}
+
+.page3Content .whiteText{
+    width: 628px;
+    margin: 0 0 0 784px;
+    text-align: left;
+}
+
+.page3Photo{
+    position: absolute;
+}
+
+.page3Photo img{
+   margin: 0 0 0 -194px;
+}
+
+.page4{
+    display: flex;
+    margin-bottom: 235px;
+}
+
+.page4Content{
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    margin: 142px 0 0 17px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 2050px;
+}
+
+.page4Content img{
+    margin: 105px 0 19px 70px;
+}
+
+.page4Content .mainTitle{
+    margin: 0 0 9px 70px;
+}
+
+.page4Content .whiteText{
+    text-align: left;
+    width: 637px;
+    margin: 0 0 0 71px;
+    padding: 0 0 106px 0;
+}
+
+
+.page4Photo{
+    position: absolute;
+
+}
+
+.page4Photo img{
+    position: relative;
+    top: 84px;
+    left: 763px;
+    z-index: 2;
+}
+
+.fotContact{
+    text-align: center;
+    margin: 0 0 102px 20px;
+}
+
+.fotContact .redButton{
+    display: inline-flex;
+    text-align: center;
+    margin: 39px 0 0 -7px;
+}
+
+footer .navigationMenu{
+    display: flex;
+    height: 62px;
+}
+
+footer .mainLogo img{
+    height: 37px;
+    width: 276px;
+    mix-blend-mode: multiply;
+}
+
+footer .mainLogo{
+    width: 10%;
+}
+
+
+
+footer .menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 1919px;
+    margin: 5px 4px 0 462px;
+    justify-content: flex-end;
+}
+
+footer .menuItem{
+ 
+    margin: 0 0 0 73px;   
+}
+
+footer p{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px; 
+    margin: 0 5px 0 0;
+    
+}
+
+footer .footReserved{
+    display: flex;
+    margin: 7px 0 0 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer .footReserved::before{
+    border-top: 1px solid #F0EDED;
+    content: '';
+    width: 1919px;
+    position: absolute;
+    top: 0;
+    left: -225px; 
+}
+
+footer{
+    background-color: #FFFFFF;
+    margin-top: 86px;
+}
