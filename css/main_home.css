@@ -27,9 +27,9 @@
 .menu{
     display: flex;
     width: 70%;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin: 3px 0 0 0;
+    padding-left: 20px;
 }
 
 .menuList{
@@ -38,7 +38,8 @@
 }
 
 .menuItem{
-    margin: 5px 0 0 73px;
+    /* margin: 5px 0 0 73px; */
+    padding: 5px;
 }
 
 .menuSecondary{
@@ -457,29 +458,29 @@ footer .navigationMenu{
 
 footer .mainLogo img{
     height: 37px;
-    width: 276px;
+    display: block;
+    width: 100%;
     mix-blend-mode: multiply;
 }
 
 footer .mainLogo{
-    width: 10%;
+    max-width: 267px;
+    border: 1px solid red;
 }
-
-
 
 footer .menu{
     display: flex;
     list-style: none;
     align-items: center;
-    width: 1919px;
-    margin: 5px 4px 0 462px;
-    justify-content: flex-end;
+    width: calc(100% - 267px);
+    margin: 5px 4px 0 0px;
+    justify-content: space-between;
+    border: 1px solid red;
 }
 
-footer .menuItem{
- 
+/* footer .menuItem{
     margin: 0 0 0 73px;   
-}
+} */
 
 footer p{
     font-family: 'Open-sans';
@@ -502,16 +503,45 @@ footer .footReserved{
 footer .footReserved::before{
     border-top: 1px solid #F0EDED;
     content: '';
-    width: 1919px;
+    max-width: 1919px;
     position: absolute;
     top: 0;
-    left: -225px; 
+    left: 0; 
 }
 
 footer{
     background-color: #FFFFFF;
 }
 
+
+/* Serhii */
+.block{
+    display: flex;
+    border: 1px solid rgb(60, 191, 51);
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .block{
+        flex-direction: column;
+    }
+}
+
+.content{
+    width: 50%;
+    border: 1px solid red;
+    padding-right: 70px;
+}
+
+.img{
+    width: 50%;
+    border: 1px solid rgb(41, 59, 196);
+}
+
+.img img{
+    display: flex;
+    width: 100%;
+}
 
 
 
