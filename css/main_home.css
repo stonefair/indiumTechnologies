@@ -14,11 +14,13 @@
 .mainLogo img{
     height: 37px;
     width: 276px;
+    width: 100%;
     mix-blend-mode: multiply;
 }
 
 .mainLogo{
     width: 30%;
+    width: 276px;
     margin: 16px 0 0 15px;
 }
 
@@ -32,6 +34,7 @@
 
 .menuList{
     display: flex;
+    
 }
 
 .menuItem{
