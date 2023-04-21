@@ -1,6 +1,6 @@
 /* @import url(/css/variables.css); */
-@import url(/css/general.css);
-@import url(/css/reset.css);
+@import url(general.css);
+@import url(reset.css);
 
 .headerBack{
     background-color: #FFFFFF;
@@ -538,6 +538,57 @@ footer{
 .img img{
     display: flex;
     width: 100%;
+}
+
+
+/*Serhii*/
+.wrap{
+    display: flex;
+    border: 1px solid rgb(41, 59, 196);
+}
+@media screen and (max-width: 900px) {
+    .wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.card{
+    padding-right: 30px;
+    border: 1px solid rgb(41, 59, 196);
+}
+@media screen and (max-width: 900px) {
+    .card{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+}
+
+.card:nth-child(3){
+    padding-right: 0;
+}
+@media screen and (max-width: 900px) {
+    .card:nth-child(2){
+    padding-right: 0;
+  }
+    .card:nth-child(3){
+    padding-right: 0;
+  }
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 50px 60px;
+    background-color: var(--secondary-color);
+}
+
+.image img{
+    display: block;
+    width: 95px
 }
 
 
