@@ -1,57 +1,19 @@
 /* @import url(/css/variables.css); */
-@import url(/css/general.css);
-@import url(/css/reset.css);
+@import url(general.css);
+@import url(reset.css);
 
 .headerBack{
     background-color: #FFFFFF;
 }
 
-.navigationMenu{
-    display: flex;
-    height: 62px;
-}
-
-.mainLogo img{
-    height: 37px;
-    width: 276px;
-    width: 100%;
-    mix-blend-mode: multiply;
-}
-
-.mainLogo{
-    width: 30%;
-    width: 276px;
-    margin: 16px 0 0 15px;
-}
-
-.menu{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.menuList{
-    display: flex;
-    
-}
-
-.menuItem{
-    /* margin: 5px 0 0 73px; */
-    padding: 5px;
-}
-
-.menuSecondary{
-    margin: 3px 6px 0 67px;
-}
-
-
 .helloContent{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 332px 0 0 48px;
+    justify-content: center;
+    height: 100%;
+    padding: 200px 100px;
+
 }
 
 .pageHello .mainTitle{
@@ -60,7 +22,8 @@
 }
 
 .pageHello p{
-    width: 954px; 
+    max-width: 954px;
+    /* width: 954px;  */
     text-align: center;
     margin: 9px 37px 0 0px;
 }
@@ -72,27 +35,67 @@
 .pageHello img{
     display: block;
     align-items: top;
-    margin: 180px 36px 0 0px;
+    margin: 20vh 36px 0 0px;
 }
 
 .pageHello{
     background: url(/img/background.svg);
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    height: 883px;
+    width: auto;
+    /* height: 883px; */
     margin-bottom: 77px;
+}
+
+/* tablet 768 меню та pageHello */
+
+
+@media screen and (max-width: 964px){
+
+    .navigationMenu{
+        height: 60px;
+    }
+
+    .helloContent .mainTitle{
+        display: none;
+    }
+    .helloContent .whiteText{
+        display: none;
+    }
+
+    .helloContent .redButton{
+        display: none;
+    }
+    .helloContent img{
+        display: none;
+    }
+
+    .menuMain{
+        display: none;
+    }
+
+    .kolhoz{
+        padding: 0 27px 95px 27px;
+    }
+
+    .kolhoz .mainText{
+        padding: 5px 0 10px 0;
+    }
+
 }
 
 .page2{
     display: flex;
-    margin-bottom: 190px;
+    margin-bottom: 190px;    
 }
 
 .page2Left{
-    width: 45%;
-    display: inline-block;
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    padding-right: 70px;
 }
 
 .sideTitle .secondaryTitle{
@@ -100,19 +103,20 @@
 }
 
 .page2Left .sideTitle{
-    display: block;
+    display: flexbox;
     width: 150px;
     margin: 8px 0 0 16px;
 }
 
 .page2Left h2{
     margin: 32px 0 0 16px;
-}
+    max-width: 80%;
+} 
 
-.page2Left p{
-    width: 90%;
+ .page2Left p{
+    max-width: 80%;
     margin: 11px 0 0 17px;
-}
+} 
 
 .page2Left .redButton{
     margin: 27px 0 0 14px;
@@ -120,180 +124,246 @@
 }
 
 .page2Right{
-    display: flex;
-    width: 55%;
+    /* display: flex; */
+    width: 50%;
+    padding-top: 70px;
 }
 .page2Right img{
-   margin: 65px 62px;
+    display: flex;
+    width: 100%;
+   /* margin: 65px 62px; */
 }
+
+/* Таблет page2 */
+@media screen and (max-width: 964px){
+    .page2{
+        flex-flow:column-reverse;
+    }
+
+    .page2Right{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .page2Left {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .page2Left .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 27px;
+        text-align: right;
+    }
+
+    .page2 .sideTitle{
+        margin: 0;
+    }
+
+    .page2{
+        margin-bottom: 0px;
+    }
+}
+
 
 .page3{
     display: flex;
     margin-bottom: 153px;
+    justify-content: space-between;
 }
 
 .page3Left{
-    display: flex;
-    width: 55%;
+    width: 50%;
+    padding-top: 100px;
 }
 
 .page3Left img{
-    margin: 57px -196px; 
+    display: flex;
+    width: 100%;
 }
 
 .page3Right{
-    width: 45%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .page3Right .sideTitle{
-    width: 40%;
+    display: flex; 
+    align-items: flex-end;
+    flex-direction: column; 
     text-align: right;
-    margin: -2px 0 0 403px;
-  
+}
+
+.page3Right .sideTitle h1{
+    width: 40%;
+}
+
+ .arrowTarget img{
+    margin: 23px 49px 0 84px;
+    display: block;
 }
 
 .page3Right .arrowTarget{
     display: flex;
-    margin-bottom: 50px;
-}
-
-.page3Right .arrowTarget img{
-    margin: 23px 0 0 84px;
-    display: block;
-    width: 108px;
-    height: 108px;
-  
+    margin: 40px 0 70px 0;
 }
 
 .page3Right .arrowTarget div{
-    margin: 22px 0px -24px 48px;
-    width: 436px;
-    
+    display: flex;
+    flex-direction: column;   
 }
 
 .page3Right .arrowTarget .secondaryText{
     margin: 16px 0 0 0;
-
 }
 
 .page3Right .pathWay{
     display: flex;
 }
 
-.page3Right .pathWay img{
-    margin: 51px 0 0 95px;
+.pathWay img{
+    margin: 51px 67px 0 95px;
     display: block;
-    width: 80px;
-    height: 80px;
 }
 
 .page3Right .pathWay div{
-    margin: 45px 0px -24px 66px;
-    width: 436px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .page3Right .pathWay .secondaryText{
     margin: 7px 0 0 0;
 }
 
+/* page3 tablet */
+@media screen and (max-width: 964px){
+    .page3{
+        flex-direction: column;
+    }
+
+    .page3Left{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .page3Right{
+        width: 100%;
+    }
+
+    .page3Right .sideTitle h1{
+        width: 20%;
+    }
+    .arrowTarget img{
+        margin: 0;
+        padding: 10px 10px;
+    }
+
+    .page3Right .arrowTarget{
+        margin: 0;
+    }
+
+    .pathWay img{
+        margin: 0;
+        padding: 10px 23px;
+    }
+
+    .page3{
+        margin-bottom: 50px;
+    }
+
+
+}
 .page4 .sideTitle{
-    display: block;
-    width: 15%;
-    margin: 0 0 0 11px;
+    display: inline-flex; 
+    flex-direction: column; 
+    text-align: left;
+    width: 10%;
+}
+.sideTitle img{
+    display: flex;
+    width: 74px;
 }
 
 .page4Content{
     display: flex;
+    justify-content: space-around;
+    margin: 40px 20px 0 20px;
 }
 
-.contentLeft{
-    width: 35%;
+.card:nth-child(2){
+    margin-top: 80px;
 }
 
-.contentLeft img{
+.card:nth-child(2) .otherTitle{
+    text-align: center;
+}
 
-    border: 1px solid black;
+.cardImg{
+    display: flex;
     background-color: var(--secondary-color);
-    padding: 55px 132px 42px 129px;
-    margin: 52px 0px 5px 136px;
+    padding: 59px 10px 43px 10px;
+    justify-content: center;
+    align-self: center;
 }
 
-.contentLeft .otherTitle{
-    margin: 0 0 0 134px;
-}
-
-.contentLeft .lowerText{
-    width: 370px;
-    margin: 9px 0 0 136px;
-    word-wrap: normal;
-}
-
-.contentLeft .linkRM{
+.cardImg img{
     display: block;
+    width: 95px;
+}
+
+.card .secondaryText{
+    max-width: 368px;
+    padding-bottom: 19px;
+}
+
+.card .otherTitle{
+    padding: 10px 0 5px 0;
+}
+
+.card .linkRM{
     text-decoration: underline;
     text-underline-offset: 7px;
-    margin: 15px 0 0 135px;
 }
 
-.contentCenter{
-    width: 30%;
+@media screen and (min-width: 964px){
+    .cardImg .whiteText{
+        display: none;
+    }
 }
 
-.contentCenter img{
+/* Tablet page4 */
 
-    border: 1px solid black;
-    background-color: var(--secondary-color);
-    padding: 55px 132px 53px 139px;
-    margin: 52px 0px 5px 128px;
+@media screen and (max-width: 964px){
+    .page4Content{
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+    }
+
+    .card h1,.card p,.card .linkRM{
+        display: none;
+    } 
+
+    .card:nth-child(2){
+        margin-top: 0px;
+    }
+
+    .cardImg {
+        border-radius: 15px;
+        margin-bottom: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 59px 10px 16px 10px;
+    }
+
 }
-
-.contentCenter .otherTitle{
-    margin: 0 0 0 130px;
-}
-
-.contentCenter .secondaryText{
-    width: 370px;
-    margin: 12px 0 0 130px;
-}
-
-.contentCenter .linkRM{
-    display: block;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    margin: 19px 0 0 130px;
-}
-
-.contentCenter{
-    width: 30%;
-    margin: 97px 0 0 -82px;
-
-}
-
-.contentRight img{
-    border: 1px solid black;
-    background-color: var(--secondary-color);
-    padding: 47px 135px 60px 137px;
-    margin: 52px 0px 5px 133px;
-}
-
-.contentRight .otherTitle{
-    margin: 0 0 0 134px;
-}
-
-.contentRight .secondaryText{
-    width: 333px;
-    margin: 0px 0 0 134px;
-    word-wrap: break-word;
-}
-
-.contentRight .linkRM{
-    display: block;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    margin: 19px 0 0 135px;
-}
-/* Стилі і розміщення форми, винесу це окремо!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Стилі і розміщення форми, винесу це окремо!!!!!!!!!!!!!!!!!!!!!!! */
 /* Задав фон і розмір форми */
 .formStyle{
     background: #FFFFFF;
@@ -302,7 +372,7 @@
     backdrop-filter: blur(15px);
     border-radius: 16px;
     background-image: url(/img/Background2.svg);
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 669px;
     width: 84%;
@@ -328,7 +398,7 @@
     background: #F5F5FA;
     box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
     border-radius: 15px;
-    width: 656px;
+    width: 90%;
     height: 40px;
     margin: 1px 38px 19px 41px;
     border: none;
@@ -347,7 +417,7 @@
     background: #F5F5FA;
     box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
     border-radius: 15px;
-    width: 656px;
+    width: 90%;
     height: 40px;
     margin: 6px 38px 14px 41px;
     border: none;
@@ -368,7 +438,7 @@
     border-radius: 15px;
     overflow: auto;
     resize: none;
-    width: 656px;
+    width: 90%  ;
     height: 141px;
     margin: 10px 38px 19px 41px;
     border: none;
@@ -388,22 +458,30 @@ form .labelText{
     display: inline-block;
 }
 
+form div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+
+}
+
 form .redButton{
-    margin: 0 0 0 562px;
-    text-align: center;
     border: none;
 }
 
 .page5Right{
-    margin: 0 0 0 131px;
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .page5Right .titleFormWhite{
-    margin: 192px 0 30px 0px;
+    height: 20px;
 }
 
 .page5Right .titleLowWhite{
+    margin-top: 20px;
     width: 85%;
 
 }
@@ -451,97 +529,38 @@ form .redButton{
     margin: 0px 32px 0 0px;
 }
 
-footer .navigationMenu{
-    display: flex;
-    height: 62px;
-}
 
-footer .mainLogo img{
-    height: 37px;
-    display: block;
-    width: 100%;
-    mix-blend-mode: multiply;
-}
+/* tablet FORM */
 
-footer .mainLogo{
-    max-width: 267px;
-    border: 1px solid red;
-}
-
-footer .menu{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    width: calc(100% - 267px);
-    margin: 5px 4px 0 0px;
-    justify-content: space-between;
-    border: 1px solid red;
-}
-
-/* footer .menuItem{
-    margin: 0 0 0 73px;   
-} */
-
-footer p{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px; 
-    margin: 0 5px 0 0;
-    
-}
-
-footer .footReserved{
-    display: flex;
-    margin: 7px 0 0 15px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-}
-
-footer .footReserved::before{
-    border-top: 1px solid #F0EDED;
-    content: '';
-    max-width: 1919px;
-    position: absolute;
-    top: 0;
-    left: 0; 
-}
-
-footer{
-    background-color: #FFFFFF;
-}
-
-
-/* Serhii */
-.block{
-    display: flex;
-    border: 1px solid rgb(60, 191, 51);
-    padding: 50px 0;
-}
-
-@media screen and (max-width: 600px) {
-    .block{
-        flex-direction: column;
+@media screen and (max-width: 964px){
+    .page5Right{
+        display: none;
     }
-}
 
-.content{
-    width: 50%;
-    border: 1px solid red;
-    padding-right: 70px;
-}
+    .page5Left{
+        width: 100%;
+    }
 
-.img{
-    width: 50%;
-    border: 1px solid rgb(41, 59, 196);
+    .formStyle{
+        background-image: none;
+        background-color: #F5F5FA;
+        box-shadow: none;
+        margin: 0;
 }
+}
+/* Кінець форми */
 
-.img img{
-    display: flex;
-    width: 100%;
-}
+
+
+
+
+
+    
+
+
+
+
+
 
 
 

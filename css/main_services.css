@@ -1,45 +1,7 @@
 @import url(/css/general.css);
 @import url(/css/reset.css);
 
-.headerBack{
-    background-color: #FFFFFF;
-}
 
-.navigationMenu{
-    display: flex;
-    height: 62px;
-}
-
-.mainLogo img{
-    height: 37px;
-    width: 276px;
-    mix-blend-mode: multiply;
-}
-
-.mainLogo{
-    width: 30%;
-    margin: 16px 0 0 15px;
-}
-
-.menu{
-    display: flex;
-    width: 70%;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 3px 0 0 0;
-}
-
-.menuList{
-    display: flex;
-}
-
-.menuItem{
-    margin: 5px 0 0 73px;
-}
-
-.menuSecondary{
-    margin: 3px 6px 0 67px;
-}
 
 .helloContent{
     display: flex;
@@ -217,65 +179,3 @@
     margin: 39px 0 0 -7px;
 }
 
-footer .navigationMenu{
-    display: flex;
-    height: 62px;
-}
-
-footer .mainLogo img{
-    height: 37px;
-    width: 276px;
-    mix-blend-mode: multiply;
-}
-
-footer .mainLogo{
-    width: 10%;
-}
-
-
-
-footer .menu{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    width: 1919px;
-    margin: 5px 4px 0 462px;
-    justify-content: flex-end;
-}
-
-footer .menuItem{
- 
-    margin: 0 0 0 73px;   
-}
-
-footer p{
-    font-family: 'Open-sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px; 
-    margin: 0 5px 0 0;
-    
-}
-
-footer .footReserved{
-    display: flex;
-    margin: 7px 0 0 15px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-}
-
-footer .footReserved::before{
-    border-top: 1px solid #F0EDED;
-    content: '';
-    width: 1919px;
-    position: absolute;
-    top: 0;
-    left: -225px; 
-}
-
-footer{
-    background-color: #FFFFFF;
-    margin-top: 86px;
-}

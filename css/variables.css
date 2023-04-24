@@ -23,6 +23,14 @@
     color: var(--text-color); 
     margin: 0 auto;
     background-color: #F5F5FA; 
+
+  }
+
+  @media screen and (max-width: 964px){
+    body{
+      font-size: 14px; 
+      line-height: 18px;
+    }
   }
 
   :root { 
@@ -38,6 +46,10 @@
   margin: 0 auto;
  
  }
- 
 
+ @media screen and (max-width: 968px){
+  .layout{
+      padding: 0 27px 0 27px;
 
+  }
+ }
