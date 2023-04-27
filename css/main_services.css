@@ -1,5 +1,5 @@
-@import url(/css/general.css);
-@import url(/css/reset.css);
+@import url(general.css);
+@import url(reset.css);
 
 
 
@@ -36,7 +36,6 @@
     background-position: center;
     height: 883px;
     margin-bottom: 44px;
-    /* height: 835px; */
 }
 
 .page2{

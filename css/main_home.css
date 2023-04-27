@@ -39,13 +39,12 @@
 }
 
 .pageHello{
-    background: url(/img/background.svg);
+    background: url(/img/Background.svg);
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: auto;
-    /* height: 883px; */
+   
     margin-bottom: 77px;
 }
 
@@ -294,8 +293,16 @@
     margin: 40px 20px 0 20px;
 }
 
+.card{
+    padding-right: 5px;
+}
+
 .card:nth-child(2){
     margin-top: 80px;
+}
+
+.card:nth-child(3){
+    padding-right: 0;
 }
 
 .card:nth-child(2) .otherTitle{
@@ -342,6 +349,7 @@
         justify-content: center;
         flex-direction: column;
         margin: 20px 0 0 0;
+        
     }
 
     .card h1,.card p,.card .linkRM{

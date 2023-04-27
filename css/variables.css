@@ -3,14 +3,14 @@
     font-family: 'Open-sans';
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans-Regular.ttf);
   }
 
   @font-face {
     font-family: 'Open-sans';
     font-style: Bold;
     font-weight: 700;
-    src: url(/fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf);
   }
 
   
