@@ -1,0 +1,278 @@
+@import url(/css/general.css);
+@import url(/css/reset.css);
+
+
+.helloContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 332px 0 0 48px;
+}
+
+.pageHello .mainTitle{
+    text-align: center;
+    margin: 0 0 0 18px;
+  
+}
+
+.pageHello p{
+    width: 954px; 
+    text-align: center;
+    margin: 0 0 0 32px;
+}
+
+.pageHello img{
+    display: block;
+    align-items: top;
+    margin: 243px 38px 0 0px;
+}
+
+.pageHello{
+    background: url(/img/Section1.svg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 883px;
+    margin-bottom: 44px;
+    /* height: 835px; */
+}
+
+.page2{
+    display: flex;
+    margin-bottom: 247px;
+}
+
+.page2Left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 59px 0 0 0;
+}
+
+.sideTitle .secondaryTitle{
+    margin-bottom: 5px;
+}
+
+.page2Left .sideTitle{
+    display: block;
+    width: 165px;
+    margin: 8px 0 0 16px;
+    word-wrap: break-word;
+}
+
+.page2Left h2{
+    margin: 32px 0 0 16px;
+}
+
+.page2Left p{
+    width: 637px;
+    margin: 11px 0 0 17px;
+}
+
+.page2Left .redButton{
+    margin: 27px 0 0 14px;
+   
+}
+
+.page2Right{
+    display: flex;
+    width: 55%;
+}
+.page2Right img{
+   margin: 65px 62px;
+}
+
+.page3{
+    display: flex;
+    margin-bottom: 260px;
+}
+
+.page3 .page3Left{
+    margin: 0 110px 0 -197px;
+}
+
+.page3Right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.page3Right .sideTitle{
+    width: 25%;
+    margin: 0 0 30px 0;
+}
+
+.page3Right .secondaryTitle{
+    margin: 0px 7px 7px 0px;
+    display: block;
+    text-align: right;
+}
+
+.page3Right img{
+    margin: 0 0 0 78px;
+}
+
+.page3Content .mainTitle{
+    margin: 0 0 11px 0;
+}
+
+.page3Content .mainText{
+    width: 637px;
+}
+
+.page4 .sideTitle{
+    width: 15%;
+    margin: 0 0 108px 13px;
+}
+
+.page4Content{
+    display: flex;
+}
+
+.page4Content .firstBlock{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 33%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.firstBlock img{
+    width: 104px;
+    margin: 0 0 28px 0;
+    z-index: 1;
+}
+
+.firstBlock .otherTitle{
+    margin: 0 0 13px 5px;
+    color: var(--white-text-color);
+    z-index: 1;
+}
+
+.firstBlock .lowerText{
+    width: 73%;
+    word-wrap: break-word;
+    color: var(--white-text-color);
+    z-index: 1;     
+}
+
+.firstBlock::after{
+    content: '';
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    position: absolute;
+    top: -69px;
+    left: 14px;
+    width: 478px;
+    height: 477px;
+    z-index: 0;
+}
+
+.page4Content .secondBlock{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 33%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.secondBlock img{
+    width: 104px;
+    margin: 0 0 28px 0;
+    z-index: 1;
+}
+
+.secondBlock .otherTitle{
+    margin: 0 0 13px 5px;
+    color: var(--secondary-color);
+    z-index: 1;
+}
+
+.secondBlock .secondaryText{
+    width: 73%;
+    word-wrap: break-word;
+    color: var(--secondary-color);
+    z-index: 1;     
+}
+
+.secondBlock::after{
+    content: '';
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    position: absolute;
+    top: -67px;
+    left: 24px;
+    width: 478px;
+    height: 477px;
+    z-index: 0;
+}
+
+.page4Content .thirdBlock{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 33%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.thirdBlock img{
+    width: 95px;
+    margin: 0 0 25px 40px;
+    z-index: 1;
+}
+
+
+.thirdBlock .secondaryText{
+    width: 73%;
+    word-wrap: break-word;
+    color: var(--white-text-color);
+    z-index: 1;   
+    margin: 0 0 0 45px;  
+}
+
+.thirdBlock .otherTitle{
+    margin: 0 0 0 43px;
+    color: var(--white-text-color);
+    z-index: 1;
+}
+
+.thirdBlock::after{
+    content: '';
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    position: absolute;
+    top: -69px;
+    left: 32px;
+    width: 478px;
+    height: 477px;
+    z-index: 0;
+}
+
+
+.page4Contact{
+    text-align: center;
+    margin: 356px 18px 0 0;
+}
+
+.page4Contact .redButton{
+    display: inline-flex;
+    margin: 47px 0 0 10px;
+}
+

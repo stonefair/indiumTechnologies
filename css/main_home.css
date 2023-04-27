@@ -1,0 +1,570 @@
+/* @import url(/css/variables.css); */
+@import url(general.css);
+@import url(reset.css);
+
+.headerBack{
+    background-color: #FFFFFF;
+}
+
+.helloContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 200px 100px;
+
+}
+
+.pageHello .mainTitle{
+    text-align: center;
+  
+}
+
+.pageHello p{
+    max-width: 954px;
+    /* width: 954px;  */
+    text-align: center;
+    margin: 9px 37px 0 0px;
+}
+
+.pageHello .redButton{
+    margin: 43px 36px 0 0px;
+}
+
+.pageHello img{
+    display: block;
+    align-items: top;
+    margin: 20vh 36px 0 0px;
+}
+
+.pageHello{
+    background: url(/img/background.svg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    /* height: 883px; */
+    margin-bottom: 77px;
+}
+
+/* tablet 768 меню та pageHello */
+
+
+@media screen and (max-width: 964px){
+
+    .navigationMenu{
+        height: 60px;
+    }
+
+    .helloContent .mainTitle{
+        display: none;
+    }
+    .helloContent .whiteText{
+        display: none;
+    }
+
+    .helloContent .redButton{
+        display: none;
+    }
+    .helloContent img{
+        display: none;
+    }
+
+    .menuMain{
+        display: none;
+    }
+
+    .kolhoz{
+        padding: 0 27px 95px 27px;
+    }
+
+    .kolhoz .mainText{
+        padding: 5px 0 10px 0;
+    }
+
+}
+
+.page2{
+    display: flex;
+    margin-bottom: 190px;    
+}
+
+.page2Left{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    padding-right: 70px;
+}
+
+.sideTitle .secondaryTitle{
+    margin-bottom: 5px;
+}
+
+.page2Left .sideTitle{
+    display: flexbox;
+    width: 150px;
+    margin: 8px 0 0 16px;
+}
+
+.page2Left h2{
+    margin: 32px 0 0 16px;
+    max-width: 80%;
+} 
+
+ .page2Left p{
+    max-width: 80%;
+    margin: 11px 0 0 17px;
+} 
+
+.page2Left .redButton{
+    margin: 27px 0 0 14px;
+   
+}
+
+.page2Right{
+    /* display: flex; */
+    width: 50%;
+    padding-top: 70px;
+}
+.page2Right img{
+    display: flex;
+    width: 100%;
+   /* margin: 65px 62px; */
+}
+
+/* Таблет page2 */
+@media screen and (max-width: 964px){
+    .page2{
+        flex-flow:column-reverse;
+    }
+
+    .page2Right{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .page2Left {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .page2Left .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 27px;
+        text-align: right;
+    }
+
+    .page2 .sideTitle{
+        margin: 0;
+    }
+
+    .page2{
+        margin-bottom: 0px;
+    }
+}
+
+
+.page3{
+    display: flex;
+    margin-bottom: 153px;
+    justify-content: space-between;
+}
+
+.page3Left{
+    width: 50%;
+    padding-top: 100px;
+}
+
+.page3Left img{
+    display: flex;
+    width: 100%;
+}
+
+.page3Right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.page3Right .sideTitle{
+    display: flex; 
+    align-items: flex-end;
+    flex-direction: column; 
+    text-align: right;
+}
+
+.page3Right .sideTitle h1{
+    width: 40%;
+}
+
+ .arrowTarget img{
+    margin: 23px 49px 0 84px;
+    display: block;
+}
+
+.page3Right .arrowTarget{
+    display: flex;
+    margin: 40px 0 70px 0;
+}
+
+.page3Right .arrowTarget div{
+    display: flex;
+    flex-direction: column;   
+}
+
+.page3Right .arrowTarget .secondaryText{
+    margin: 16px 0 0 0;
+}
+
+.page3Right .pathWay{
+    display: flex;
+}
+
+.pathWay img{
+    margin: 51px 67px 0 95px;
+    display: block;
+}
+
+.page3Right .pathWay div{
+    display: flex;
+    flex-direction: column;
+}
+
+.page3Right .pathWay .secondaryText{
+    margin: 7px 0 0 0;
+}
+
+/* page3 tablet */
+@media screen and (max-width: 964px){
+    .page3{
+        flex-direction: column;
+    }
+
+    .page3Left{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .page3Right{
+        width: 100%;
+    }
+
+    .page3Right .sideTitle h1{
+        width: 20%;
+    }
+    .arrowTarget img{
+        margin: 0;
+        padding: 10px 10px;
+    }
+
+    .page3Right .arrowTarget{
+        margin: 0;
+    }
+
+    .pathWay img{
+        margin: 0;
+        padding: 10px 23px;
+    }
+
+    .page3{
+        margin-bottom: 50px;
+    }
+
+
+}
+.page4 .sideTitle{
+    display: inline-flex; 
+    flex-direction: column; 
+    text-align: left;
+    width: 10%;
+}
+.sideTitle img{
+    display: flex;
+    width: 74px;
+}
+
+.page4Content{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 20px 0 20px;
+}
+
+.card:nth-child(2){
+    margin-top: 80px;
+}
+
+.card:nth-child(2) .otherTitle{
+    text-align: center;
+}
+
+.cardImg{
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 59px 10px 43px 10px;
+    justify-content: center;
+    align-self: center;
+}
+
+.cardImg img{
+    display: block;
+    width: 95px;
+}
+
+.card .secondaryText{
+    max-width: 368px;
+    padding-bottom: 19px;
+}
+
+.card .otherTitle{
+    padding: 10px 0 5px 0;
+}
+
+.card .linkRM{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+@media screen and (min-width: 964px){
+    .cardImg .whiteText{
+        display: none;
+    }
+}
+
+/* Tablet page4 */
+
+@media screen and (max-width: 964px){
+    .page4Content{
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+    }
+
+    .card h1,.card p,.card .linkRM{
+        display: none;
+    } 
+
+    .card:nth-child(2){
+        margin-top: 0px;
+    }
+
+    .cardImg {
+        border-radius: 15px;
+        margin-bottom: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 59px 10px 16px 10px;
+    }
+
+}
+/* Стилі і розміщення форми, винесу це окремо!!!!!!!!!!!!!!!!!!!!!!! */
+/* Задав фон і розмір форми */
+.formStyle{
+    background: #FFFFFF;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    background-image: url(/img/Background2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 669px;
+    width: 84%;
+    background-position: right;
+    margin: 247px 0 133px 126px;
+    display: flex;
+}
+
+.page5Left{
+    width: 65%;
+}
+
+.page5Left .mainTitle{
+    display: inline-block;
+    margin: 61px 0 0 38px;
+}
+
+.page5Left .textForm{
+    margin: 9px 0 68px 39px;
+}
+
+#name{
+    background: #F5F5FA;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+    border-radius: 15px;
+    width: 90%;
+    height: 40px;
+    margin: 1px 38px 19px 41px;
+    border: none;
+    padding-left: 29px;
+}
+
+#name::placeholder{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#email{
+    background: #F5F5FA;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+    border-radius: 15px;
+    width: 90%;
+    height: 40px;
+    margin: 6px 38px 14px 41px;
+    border: none;
+    padding-left: 29px;
+}
+
+#email::placeholder{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#message{
+    background: #F5F5FA;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+    border-radius: 15px;
+    overflow: auto;
+    resize: none;
+    width: 90%  ;
+    height: 141px;
+    margin: 10px 38px 19px 41px;
+    border: none;
+    padding: 0px 0 0 29px;
+}
+
+#message::placeholder{
+    font-family: 'Open-sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+form .labelText{
+    margin: 0 0 0 45px;
+    display: inline-block;
+}
+
+form div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+
+}
+
+form .redButton{
+    border: none;
+}
+
+.page5Right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page5Right .titleFormWhite{
+    height: 20px;
+}
+
+.page5Right .titleLowWhite{
+    margin-top: 20px;
+    width: 85%;
+
+}
+.phoneNumber{
+    display: flex;
+    margin: 35px 0 0 8px;
+}
+
+.phoneNumber .numbersWhite{
+    margin: 4px 0 0 15px;
+}
+
+.emailCompany{
+    display: flex;
+    margin: 26px 0 0 7px;
+}
+
+.emailCompany .lastFontForm{
+    margin: 4px 0 19px 16px;
+}
+
+.emailCompany img{
+    height: 14px;
+    width: 14px;
+}
+.placeCompany{
+    display: flex;
+}
+
+.placeCompany img{
+    margin: 2px 0 0 8px;
+    width: 14px;
+    height: 14px;
+}
+
+.placeCompany .lastFontForm{
+    margin: 0 0 0 14px;
+}
+
+.socialIcons{
+    margin: 54px 0 0 16px;
+}
+
+.socialIcons img{
+    margin: 0px 32px 0 0px;
+}
+
+
+/* tablet FORM */
+
+@media screen and (max-width: 964px){
+    .page5Right{
+        display: none;
+    }
+
+    .page5Left{
+        width: 100%;
+    }
+
+    .formStyle{
+        background-image: none;
+        background-color: #F5F5FA;
+        box-shadow: none;
+        margin: 0;
+}
+}
+/* Кінець форми */
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
