@@ -2,10 +2,6 @@
 @import url(general.css);
 @import url(reset.css);
 
-.headerBack{
-    background-color: #FFFFFF;
-}
-
 .helloContent{
     display: flex;
     flex-direction: column;
@@ -23,7 +19,6 @@
 
 .pageHello p{
     max-width: 954px;
-    /* width: 954px;  */
     text-align: center;
     margin: 9px 37px 0 0px;
 }
@@ -44,7 +39,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   
+    height: 884px;
     margin-bottom: 77px;
 }
 
@@ -55,6 +50,10 @@
 
     .navigationMenu{
         height: 60px;
+    }
+
+    .pageHello{
+        height: auto;
     }
 
     .helloContent .mainTitle{
@@ -450,7 +449,8 @@
     height: 141px;
     margin: 10px 38px 19px 41px;
     border: none;
-    padding: 0px 0 0 29px;
+    padding: 10px 0 0 29px;
+   
 }
 
 #message::placeholder{
@@ -459,6 +459,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
+    /* padding: 10px 0 0 0px; */
 }
 
 form .labelText{

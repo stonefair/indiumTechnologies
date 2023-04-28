@@ -6,45 +6,85 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 332px 0 0 48px;
 }
 
 .pageHello .mainTitle{
     text-align: center;
-    margin: 0 0 0 18px;
   
 }
 
 .pageHello p{
-    width: 954px; 
+    max-width: 954px;
     text-align: center;
-    margin: 0 0 0 32px;
+    padding: 9px 37px 0 0px;
 }
 
-.pageHello img{
+.pageHello .redButton{
+    margin: 43px 36px 0 0px;
+}
+
+.pageHello .img{
     display: block;
     align-items: top;
-    margin: 243px 38px 0 0px;
+    padding: 20vh 36px 0 0px;
 }
 
 .pageHello{
     background: url(/img/Section1.svg);
-    margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    height: 883px;
-    margin-bottom: 44px;
-    /* height: 835px; */
+    padding-bottom: 50px;
+    height: 884px;
+}
+/* tablet 768 меню та pageHello */
+@media screen and (max-width: 964px){
+
+    .navigationMenu{
+        height: 60px;
+    }
+
+    .pageHello{
+        height: auto;
+    }
+
+    .helloContent .mainTitle{
+        display: none;
+    }
+    .helloContent .whiteText{
+        display: none;
+    }
+
+    .helloContent .redButton{
+        display: none;
+    }
+    .helloContent img{
+        display: none;
+    }
+
+    .menuMain{
+        display: none;
+    }
+
+    .kolhoz{
+        padding: 0 27px 95px 27px;
+    }
+
+    .kolhoz .mainText{
+        padding: 5px 0 10px 0;
+    }
+
 }
 
 .page2{
     display: flex;
-    margin-bottom: 247px;
+    padding-bottom: 150px;
 }
 
 .page2Left{
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin: 59px 0 0 0;
@@ -62,11 +102,12 @@
 }
 
 .page2Left h2{
+    width: 95%;
     margin: 32px 0 0 16px;
 }
 
 .page2Left p{
-    width: 637px;
+    width: 80%;
     margin: 11px 0 0 17px;
 }
 
@@ -76,50 +117,128 @@
 }
 
 .page2Right{
-    display: flex;
-    width: 55%;
+    /* display: flex; */
+    width: 50%;
+    padding-top: 50px;
 }
 .page2Right img{
-   margin: 65px 62px;
+    display: flex;
+    width: 100%;
 }
+
+/* Таблет page2 */
+@media screen and (max-width: 964px){
+    .page2{
+        flex-flow:column-reverse;
+    }
+
+    .page2Right{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .page2Left {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .page2Left .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 27px;
+        text-align: right;
+    }
+
+    .page2 .sideTitle{
+        padding-left: 0;
+    }
+
+    .page2{
+        margin-bottom: 0px;
+    }
+}
+
 
 .page3{
     display: flex;
-    margin-bottom: 260px;
+    margin-bottom: 150px;
 }
 
-.page3 .page3Left{
-    margin: 0 110px 0 -197px;
+.page3Left{
+    width: 50%;
+
+}
+
+.page3Left img{
+    width: 100%;
 }
 
 .page3Right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 50%;
+    padding-left: 50px;
     
 }
 
 .page3Right .sideTitle{
     width: 25%;
-    margin: 0 0 30px 0;
+    margin: 0 16px 30px 0;
+    text-align: end;
 }
 
 .page3Right .secondaryTitle{
-    margin: 0px 7px 7px 0px;
-    display: block;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .page3Right img{
-    margin: 0 0 0 78px;
+    float: right;
+    display: block;
 }
 
 .page3Content .mainTitle{
-    margin: 0 0 11px 0;
+    padding: 0 0 11px 0;
 }
 
-.page3Content .mainText{
-    width: 637px;
+/* page3 tablet */
+@media screen and (max-width: 964px){
+    .page3{
+        flex-direction: column;
+    }
+
+    .page3Left{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .page3Right{
+        width: 100%;
+    }
+
+    .page3Right .sideTitle{
+        width: 100%;
+    }
+    .arrowTarget img{
+        margin: 0;
+        padding: 10px 10px;
+    }
+
+    .page3Right .arrowTarget{
+        margin: 0;
+    }
+
+    .pathWay img{
+        margin: 0;
+        padding: 10px 23px;
+    }
+
+    .page3{
+        margin-bottom: 50px;
+    }
+
 }
 
 .page4 .sideTitle{
@@ -131,7 +250,7 @@
     display: flex;
 }
 
-.page4Content .firstBlock{
+.page4Content .card{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -139,136 +258,47 @@
     text-align: center;
     position: relative;
     z-index: 1;
-
-}
-
-.firstBlock img{
-    width: 104px;
-    margin: 0 0 28px 0;
-    z-index: 1;
-}
-
-.firstBlock .otherTitle{
-    margin: 0 0 13px 5px;
-    color: var(--white-text-color);
-    z-index: 1;
-}
-
-.firstBlock .lowerText{
-    width: 73%;
-    word-wrap: break-word;
-    color: var(--white-text-color);
-    z-index: 1;     
-}
-
-.firstBlock::after{
-    content: '';
-    background: #454654;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
     border-radius: 16px;
-    position: absolute;
-    top: -69px;
-    left: 14px;
-    width: 478px;
-    height: 477px;
-    z-index: 0;
+    background: #454654;
+    margin-right: 33px;
 }
 
-.page4Content .secondBlock{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 33%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-
-}
-
-.secondBlock img{
-    width: 104px;
-    margin: 0 0 28px 0;
-    z-index: 1;
-}
-
-.secondBlock .otherTitle{
-    margin: 0 0 13px 5px;
-    color: var(--secondary-color);
-    z-index: 1;
-}
-
-.secondBlock .secondaryText{
-    width: 73%;
-    word-wrap: break-word;
-    color: var(--secondary-color);
-    z-index: 1;     
-}
-
-.secondBlock::after{
-    content: '';
+.card:nth-child(2){
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px);
-    border-radius: 16px;
-    position: absolute;
-    top: -67px;
-    left: 24px;
-    width: 478px;
-    height: 477px;
-    z-index: 0;
 }
 
-.page4Content .thirdBlock{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 33%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-
+.card:nth-child(2) .otherTitle{
+    color: var(--secondary-color);
 }
 
-.thirdBlock img{
-    width: 95px;
-    margin: 0 0 25px 40px;
-    z-index: 1;
+.card:nth-child(2) .secondaryText{
+    color: var(--secondary-color);
 }
 
-
-.thirdBlock .secondaryText{
-    width: 73%;
-    word-wrap: break-word;
+.card .otherTitle{
+    padding: 0 0 0 0;
     color: var(--white-text-color);
-    z-index: 1;   
-    margin: 0 0 0 45px;  
 }
-
-.thirdBlock .otherTitle{
-    margin: 0 0 0 43px;
+.card .secondaryText{
     color: var(--white-text-color);
+    padding: 0 55px 83px 55px;
+}
+.card img{
+    width: 104px;
+    padding: 70px 0 0 0;
     z-index: 1;
 }
 
-.thirdBlock::after{
-    content: '';
-    background: #454654;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px);
-    border-radius: 16px;
-    position: absolute;
-    top: -69px;
-    left: 32px;
-    width: 478px;
-    height: 477px;
-    z-index: 0;
+.card .otherTitle{
+    padding: 0 0 13px 5px;
+    color: var(--white-text-color);
 }
-
 
 .page4Contact{
     text-align: center;
-    margin: 356px 18px 0 0;
+    padding: 356px 18px 40px 0;
 }
 
 .page4Contact .redButton{
@@ -276,3 +306,21 @@
     margin: 47px 0 0 10px;
 }
 
+@media screen and (max-width: 964px){
+    .page4Content{
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .page4Content .card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .page4Contact{
+        padding: 20px 0 20px 0;
+
+    }
+
+}
