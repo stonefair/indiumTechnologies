@@ -1,0 +1,180 @@
+@import url(general.css);
+@import url(reset.css);
+
+
+
+.helloContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 332px 0 0 48px;
+}
+
+.pageHello .mainTitle{
+    text-align: center;
+    margin: 0 0 0 18px;
+  
+}
+
+.pageHello p{
+    width: 954px; 
+    text-align: center;
+    margin: 0 0 0 23px;
+}
+
+.pageHello img{
+    display: block;
+    align-items: top;
+    margin: 243px 38px 0 0px;
+}
+
+.pageHello{
+    background: url(/img/Background3.svg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 883px;
+    margin-bottom: 44px;
+}
+
+.page2{
+    display: flex;
+    margin-bottom: 253px;
+}
+
+.page2Content{
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    margin: 142px 0 0 45px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 2050px;
+}
+
+.page2Content img{
+    margin: 43px 0 19px 39px;
+}
+
+.page2Content .mainTitle{
+    margin: 0 0 19px 39px;
+}
+
+.page2Content .whiteText{
+    text-align: left;
+    width: 637px;
+    margin: 0 0 0 42px;
+    padding: 0 0 149px 0;
+}
+
+
+.page2Photo{
+    position: absolute;
+
+}
+
+.page2Photo img{
+    position: relative;
+    top: 77px;
+    left: 744px;
+    z-index: 2;
+}
+
+.page3{
+    display: flex;
+    margin-bottom: 192px;
+}
+
+.page3Content{
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 593px;
+    width: 100%;
+    margin-top: 57px;
+   
+}
+
+.page3Content img{
+    width: 96px;
+    margin: 61px 0 31px 248px;
+}
+
+.page3Content .mainTitle{
+    margin: 0 0 16px 360px;
+}
+
+.page3Content .whiteText{
+    width: 628px;
+    margin: 0 0 0 784px;
+    text-align: left;
+}
+
+.page3Photo{
+    position: absolute;
+}
+
+.page3Photo img{
+   margin: 0 0 0 -194px;
+}
+
+.page4{
+    display: flex;
+    margin-bottom: 235px;
+}
+
+.page4Content{
+    background: #454654;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    margin: 142px 0 0 17px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 2050px;
+}
+
+.page4Content img{
+    margin: 105px 0 19px 70px;
+}
+
+.page4Content .mainTitle{
+    margin: 0 0 9px 70px;
+}
+
+.page4Content .whiteText{
+    text-align: left;
+    width: 637px;
+    margin: 0 0 0 71px;
+    padding: 0 0 106px 0;
+}
+
+
+.page4Photo{
+    position: absolute;
+
+}
+
+.page4Photo img{
+    position: relative;
+    top: 84px;
+    left: 763px;
+    z-index: 2;
+}
+
+.fotContact{
+    text-align: center;
+    margin: 0 0 102px 20px;
+}
+
+.fotContact .redButton{
+    display: inline-flex;
+    text-align: center;
+    margin: 39px 0 0 -7px;
+}
+
