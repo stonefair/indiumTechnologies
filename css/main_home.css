@@ -122,14 +122,13 @@
 }
 
 .page2Right{
-    /* display: flex; */
     width: 50%;
     padding-top: 70px;
 }
 .page2Right img{
     display: flex;
     width: 100%;
-   /* margin: 65px 62px; */
+
 }
 
 /* Таблет page2 */

@@ -1,0 +1,79 @@
+@import url(general.css);
+@import url(reset.css);
+
+
+.helloContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 332px 0 0 48px;
+}
+
+.pageHello .mainTitle{
+    text-align: center;
+  
+}
+
+.pageHello p{
+    max-width: 954px;
+    text-align: center;
+    padding: 9px 37px 0 0px;
+}
+
+.pageHello .redButton{
+    margin: 43px 36px 0 0px;
+}
+
+.pageHello .img{
+    display: block;
+    align-items: top;
+    padding: 20vh 36px 0 0px;
+}
+
+.pageHello{
+    background: url(/img/Background_careers.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    height: 884px;
+}
+/* tablet 768 меню та pageHello */
+@media screen and (max-width: 964px){
+
+    .navigationMenu{
+        height: 60px;
+    }
+
+    .pageHello{
+        height: auto;
+    }
+
+    .helloContent .mainTitle{
+        display: none;
+    }
+    .helloContent .whiteText{
+        display: none;
+    }
+
+    .helloContent .redButton{
+        display: none;
+    }
+    .helloContent img{
+        display: none;
+    }
+
+    .menuMain{
+        display: none;
+    }
+
+    .kolhoz{
+        padding: 0 27px 95px 27px;
+    }
+
+    .kolhoz .mainText{
+        padding: 5px 0 10px 0;
+    }
+
+}
